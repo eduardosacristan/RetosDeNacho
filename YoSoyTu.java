@@ -1,4 +1,7 @@
-//Eduardo Sacristán Beltri
+/*Eduardo Sacristán Beltri
+  This software asks names and relationships and merges them except if the name is "Luke"
+  and the relationship is "father"
+*/
 
 import java.util.Scanner;
 
@@ -18,7 +21,7 @@ public class YoSoyTu
             String name = sc.nextLine();
             String relationship = sc.nextLine();
 
-            if (name.equals("Luke") && relationship.equals("padre"))
+            if (name.equals("Luke") && relationship.equals("father"))
                 System.out.println("TOP SECRET");
             else 
             {

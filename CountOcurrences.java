@@ -25,10 +25,10 @@ public class CountOcurrences {
 
         while (phraseA.indexOf(phraseB) >= 0) {
             positionsMeter++;
-            phraseA.replaceFirst(phraseB, "");
+            phraseA = phraseA.replaceFirst(phraseB, "");
         }
 
-        if (positionsMeter == ocurrences)
+        if (positionsMeter >= ocurrences)
             yesVeryWell = true;
 
         return yesVeryWell;
